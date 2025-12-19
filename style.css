@@ -22,7 +22,7 @@
 }
 .home {
   position: relative;
-  background-image: url(ff.png);
+  background-image: url(ff.webp);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -89,7 +89,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
-  background-image: url(star.png);
+  background-image: url(star.webp);
   background-position: top;
   background-size: cover;
 }
@@ -159,7 +159,7 @@
   height: auto;
   background-position: center;
   background-size: cover;
-  background-image: url(ss.png);
+  background-image: url(ss.webp);
 }
 .how-to-buy {
   height: auto;
