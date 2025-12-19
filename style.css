@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-style: normal;
-  font-family: "Cherry Bomb One";
+  
   font-variation-settings: "GRAD" 0;
   font-optical-sizing: auto;
   scroll-behavior: smooth;
@@ -12,7 +12,7 @@
 .nav {
   position: fixed;
   top: 35px;
-  width: 70%;
+  width: 100%;
   z-index: 10;
   justify-self: center;
   display: grid;
@@ -21,6 +21,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .home {
+  font-family: "Cherry Bomb One";
   position: relative;
   background-image: url(ff.webp);
   background-position: center;
@@ -39,7 +40,7 @@
 .left {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .left a {
@@ -82,10 +83,14 @@
   border: 5px solid white;
   transition: 0.3s;
 }
+#ls{
+  justify-content: flex-start;
+}
 .btn:hover {
   transform: scale(0.97);
 }
 .about {
+  font-family: "Cherry Bomb One";
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -156,6 +161,7 @@
   line-height: 55px;
 }
 .mme {
+  font-family: "Cherry Bomb One";
   height: auto;
   background-position: center;
   background-size: cover;
@@ -230,9 +236,9 @@
   text-align: center;
   background-color: white;
   display: flex;
+  font-family: "Sour Gummy";
   justify-content: space-between;
   align-items: center;
-  font-family: sans-serif;
   width: 90%;
   border-radius: 10px;
   font-size: 18px;
@@ -374,6 +380,7 @@
     gap: 30px;
   }
   .text {
+    
     font-size: 50px;
   }
   .box {
@@ -389,7 +396,7 @@
     font-size: 30px;
   }
   .txt {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 @media (min-width: 801px) and (max-width: 1024px) {
@@ -406,6 +413,13 @@
   #jk {
     font-size: 28px;
     line-height: 30px;
+  }
+  #fl{
+    display: none;
+  }
+  #flx{
+    width: 200px;
+    height: 200px;
   }
   .box {
     height: 700px;
