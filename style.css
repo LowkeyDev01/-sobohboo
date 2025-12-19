@@ -12,7 +12,7 @@
 .nav {
   position: fixed;
   top: 35px;
-  width: 60%;
+  width: 65%;
   z-index: 10;
   justify-self: center;
   display: grid;
@@ -156,13 +156,13 @@
   line-height: 55px;
 }
 .mme {
-  height: 150vh;
+  height: auto;
   background-position: center;
   background-size: cover;
   background-image: url(ss.png);
 }
 .how-to-buy {
-  height: 100vh;
+  height: auto;
 }
 .socials {
   gap: 30px;
@@ -176,7 +176,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20%;
+  padding: 30px;
   font-size: 60px;
   padding-left: 50px;
 }
@@ -189,7 +189,7 @@
 .box {
   display: flex;
   flex-direction: column;
-  height: 95%;
+  height: 80vh;
   width: 420px;
   border-radius: 25px;
   background: white;
@@ -223,7 +223,7 @@
   font-family: Sour Gummy;
   font-size: 22px;
 }
-#cc{
+#cc {
   display: none;
 }
 .tk {
@@ -259,7 +259,7 @@
   font-family: Google Sans;
   font-weight: bold;
   font-size: 60px;
-  color: white;
+  color: rgba(0, 0, 0, 0.795);
 }
 .ve {
   display: flex;
@@ -280,7 +280,7 @@
 .container a {
   color: white;
 }
-.container:hover{
+.container:hover {
   transform: scale(0.97);
 }
 #tt {
@@ -290,41 +290,41 @@
 #tb {
   background-color: rgb(255, 134, 154);
 }
-@media(max-width: 768px){
-  #jj{
+@media (max-width: 800px) {
+  #js {
     display: none;
   }
-  .nav{ 
+  .nav {
     grid-template-columns: 1fr 1fr;
     width: 100vw;
     top: 0;
     padding: 10px;
   }
-  #ls{
+  #ls {
     justify-content: flex-end;
   }
-  #ls a{
+  #ls a {
     display: none;
   }
-  .logo-sec{
+  .logo-sec {
     font-size: 35px;
     justify-content: flex-start;
   }
-  .home{
+  .home {
     text-align: center;
     font-size: 35px;
   }
-  #cc{
+  #cc {
     display: block;
     font-size: 32px;
   }
-  .btn{
+  .btn {
     font-size: 25px;
   }
-  #fl{
+  #fl {
     display: none;
   }
-  #flx{
+  #flx {
     right: 0%;
     position: absolute;
     width: 150px;
@@ -332,18 +332,119 @@
     animation-duration: 3s;
   }
   @keyframes ff {
-  0% {
-    top: 80%;
+    0% {
+      top: 80%;
+    }
+    50% {
+      top: 81.5%;
+    }
+    100% {
+      top: 80%;
+    }
   }
-  50% {
-    top: 81.5%;
+  #zz {
+    width: 40px;
+    height: 40px;
   }
-  100% {
-    top: 80%;
+  .about {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .cont {
+    padding-inline: 40px;
+    height: 45%;
+    gap: 14px;
+    width: 100%;
+  }
+  .float img {
+    height: 100%;
+    width: 60%;
+  }
+  #jj {
+    font-size: 40px;
+  }
+  #jk {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .col {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .text {
+    font-size: 50px;
+  }
+  .box {
+    height: 700px;
+    width: 90%;
+  }
+  .ve {
+    width: 70%;
+  }
+  .container {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .txt {
+    font-size: 40px;
   }
 }
-#zz{
-  width: 40px;
-  height: 40px;
-}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .nav {
+    width: 100%;
+  }
+  .logo-sec {
+    font-size: 35px;
+  }
+  .float img {
+    width: 100%;
+    height: 40%;
+  }
+  #jk {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .box {
+    height: 700px;
+    width: 60%;
+  }
+  .ve {
+    width: 50%;
+  }
+  .container {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .txt {
+    font-size: 40px;
+  }
+  .col {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .text {
+    font-size: 50px;
+  }
+  @keyframes ff {
+    0% {
+      top: 80%;
+    }
+    50% {
+      top: 81.5%;
+    }
+    100% {
+      top: 80%;
+    }
+  }
+  .home {
+    text-align: center;
+    font-size: 35px;
+  }
+  .btn {
+    font-size: 25px;
+  }
 }
