@@ -13,6 +13,7 @@
   position: fixed;
   top: 35px;
   width: 60%;
+  z-index: 10;
   justify-self: center;
   display: grid;
   font-family: "Cherry Bomb One";
@@ -222,6 +223,9 @@
   font-family: Sour Gummy;
   font-size: 22px;
 }
+#cc{
+  display: none;
+}
 .tk {
   text-align: center;
   background-color: white;
@@ -269,12 +273,15 @@
   font-size: 40px;
   color: white;
   width: 90px;
-
+  transition: 0.2s;
   height: 90px;
   border-radius: 50%;
 }
 .container a {
   color: white;
+}
+.container:hover{
+  transform: scale(0.97);
 }
 #tt {
   background-color: rgb(87, 177, 207);
@@ -282,4 +289,61 @@
 #ta,
 #tb {
   background-color: rgb(255, 134, 154);
+}
+@media(max-width: 768px){
+  #jj{
+    display: none;
+  }
+  .nav{ 
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    top: 0;
+    padding: 10px;
+  }
+  #ls{
+    justify-content: flex-end;
+  }
+  #ls a{
+    display: none;
+  }
+  .logo-sec{
+    font-size: 35px;
+    justify-content: flex-start;
+  }
+  .home{
+    text-align: center;
+    font-size: 35px;
+  }
+  #cc{
+    display: block;
+    font-size: 32px;
+  }
+  .btn{
+    font-size: 25px;
+  }
+  #fl{
+    display: none;
+  }
+  #flx{
+    right: 0%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    animation-duration: 3s;
+  }
+  @keyframes ff {
+  0% {
+    top: 80%;
+  }
+  50% {
+    top: 81.5%;
+  }
+  100% {
+    top: 80%;
+  }
+}
+#zz{
+  width: 40px;
+  height: 40px;
+}
 }
