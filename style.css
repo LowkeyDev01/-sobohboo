@@ -12,7 +12,7 @@
 .nav {
   position: fixed;
   top: 35px;
-  width: 65%;
+  width: 70%;
   z-index: 10;
   justify-self: center;
   display: grid;
