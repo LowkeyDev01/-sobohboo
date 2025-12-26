@@ -26,6 +26,8 @@
         href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=DynaPuff:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Londrina+Shadow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b381d2c4e3.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -65,14 +67,14 @@
                 crypto adventures.</p>
         </div>
         <div class="float">
-            <img src="float-removebg-preview.webp" loading="lazy">
+            <img src="float-removebg-preview.webp" loading="lazy" data-aos="fade-up" data-aos-duration="1000">
         </div>
     </div>
     <div class="mme">
         <div class="how-to-buy" id="how-to-buy">
             <div class="text">How to Buy</div>
             <div class="col">
-                <div class="box" id="one">
+                <div class="box" id="one" data-aos="fade-up" data-aos-duration="1000">
                     <div class="img">
                         <img src="pp.webp" loading="lazy">
                     </div>
@@ -86,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box" id="two">
+                <div class="box" id="two" data-aos="fade-up" data-aos-duration="1500">
                     <div class="img">
                         <img src="fef.webp" loading="lazy">
                     </div>
@@ -96,7 +98,7 @@
                             using a reliable bridge. Make sure the funds arrive safely before proceeding.</p>
                     </div>
                 </div>
-                <div class="box" id="three">
+                <div class="box" id="three" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
                         <img src="bh.webp" loading="lazy">
                     </div>
@@ -110,8 +112,8 @@
         </div>
         <div class="socials" id="socials">
             <p class="txt">Snuggle up on socials!</p>
-            <div class="ve">
-                <div class="container" id="tt">
+            <div class="ve" data-aos="fade-up" data-aos-duration="1000">
+                <div class="container" id="tt" >
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
                 <div class="container" id="ta">
@@ -147,6 +149,7 @@
         closeBtn.addEventListener('click', ()=>{
             overlay.style.top = '-1200px'
         })
+        AOS.init();
     </script>
 </body>
 
