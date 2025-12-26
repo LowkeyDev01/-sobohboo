@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$SOBOHBOO</title>
+    <!--Time to add SEO!-->
+    <meta name="description" content="The Cutest Memecoin on Solana!">
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="https://sobohboo.vercel.app/main.webp">
+    <meta property="og:title" content="SOBOHBOO - The Cutest Memecoin on Solana!">
+    <meta property="og:description" content="Join the pack!">
+    <meta property="og:url" content="http://sobohboo.vercel.app">
+    <meta property="og:type" content="website">
+
+    <!--For X now-->
+    <meta property="twitter:image" content="https://sobohboo.vercel.app/main.webp">
+    <meta property="twitter:title" content="SOBOHBOO - The Cutest Memecoin on Solana!">
+    <meta property="twitter:description" content="Join the pack!">
+    <meta property="twitter:card" content="summary_large_image">
+    <title>THE CUTEST MEMECOIN - $SOBOHBOO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +30,13 @@
 
 <body>
     <div class="home">
+        <div class="overlay">
+            <i class="fa-solid fa-x" id="kk"></i>
+            <a href="#" id="ho"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#about">About</a>
+            <a href="#how-to-buy"><i class="fa-solid fa-cart-shopping"></i>How to Buy</a>
+            <a href="#socials"><i class="fa-solid fa-comment-dots"></i>Socials</a>
+        </div>
         <div class="nav">
             <div class="left" id="js">
                 <a href="#" id="ho"><i class="fa-solid fa-house"></i>Home</a>
@@ -106,15 +127,25 @@
     <script>
         const CA = '4vhHQP2h8NiYVnLoxLXJYKBtYuLuAH1H6sy6SoVuTPqT'
         const copyBtn = document.getElementById('copy')
+        const btn = document.getElementById('cc')
+        const overlay = document.querySelector('.overlay')
+        const closeBtn = document.getElementById('kk')
 
 
-        copyBtn.addEventListener('click', ()=>{
+        copyBtn.addEventListener('click', () => {
             navigator.clipboard.writeText(CA)
 
             copyBtn.className = 'fa-solid fa-check'
-            setTimeout(()=>{
+            setTimeout(() => {
                 copyBtn.className = 'fa-regular fa-copy'
             }, 2500)
+        })
+
+        btn.addEventListener('click', ()=>{
+            overlay.style.top = '0'
+        })
+        closeBtn.addEventListener('click', ()=>{
+            overlay.style.top = '-800px'
         })
     </script>
 </body>

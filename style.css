@@ -43,7 +43,7 @@
   justify-content: flex-end;
   align-items: center;
 }
-.left a {
+.left a, .overlay a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
   background: skyblue;
   transition: 0.2s;
 }
-.left a:hover {
+.left a:hover, .overlay a:hover{
   background: pink;
 }
 #ho {
@@ -295,6 +295,37 @@
 #ta,
 #tb {
   background-color: rgb(255, 134, 154);
+}
+.overlay{
+  position: relative;
+  z-index: 11;
+  position: fixed;
+  top: -800px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  transition: 0.5s;
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.145);
+  justify-content: center;
+  flex-direction: column;
+}
+.overlay a{
+  width: 50%;
+}
+#kk{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: white;
+  font-size: 30px;
+}
+#kk:hover{
+  color: pink;
 }
 @media (max-width: 800px) {
   #js {
