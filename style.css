@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-style: normal;
-  
   font-variation-settings: "GRAD" 0;
   font-optical-sizing: auto;
   scroll-behavior: smooth;
@@ -11,13 +10,14 @@
 
 .nav {
   position: fixed;
-  top: 35px;
+  top: 0px;
+  padding-top: 35px;
   width: 100%;
   z-index: 10;
   justify-self: center;
   display: grid;
   font-family: "Cherry Bomb One";
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   grid-template-columns: 1fr 1fr 1fr;
 }
 .home {
@@ -43,7 +43,8 @@
   justify-content: flex-end;
   align-items: center;
 }
-.left a, .overlay a{
+.left a,
+.overlay a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +58,8 @@
   background: skyblue;
   transition: 0.2s;
 }
-.left a:hover, .overlay a:hover{
+.left a:hover,
+.overlay a:hover {
   background: pink;
 }
 #ho {
@@ -83,20 +85,189 @@
   border: 5px solid white;
   transition: 0.3s;
 }
-#ls{
+#ls {
   justify-content: flex-start;
 }
 .btn:hover {
   transform: scale(0.97);
 }
+/* about section*/
 .about {
-  font-family: "Cherry Bomb One";
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: auto;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  flex-direction: column;
   background-image: url(star.webp);
+  padding-inline: 25%;
   background-position: top;
   background-size: cover;
+  padding-bottom: 30px;
+}
+.dd {
+  padding-top: 100px;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ha {
+  font-size: 70px;
+  font-family: Cherry Bomb One;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+#hb {
+  font-family: Sour Gummy;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+}
+.de {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.col {
+  font-family: Google Sans;
+  display: flex;
+  justify-content: space-around;
+  height: 110px;
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.col:hover {
+  transform: scale(1.02);
+}
+#one {
+  background-color: lightblue;
+  border: 3px solid rgb(126, 188, 209);
+}
+#two {
+  background-color: pink;
+  border: 3px solid rgb(248, 131, 152);
+}
+.lef {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#one img,
+#two img {
+  width: 95%;
+  height: 95%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 85%;
+}
+.top {
+  font-weight: bold;
+  font-size: 22px;
+}
+#aa {
+  font-size: 20px;
+  padding-top: 50px;
+  font-family: Google Sans;
+}
+/*how to buy + socials*/
+.mix{
+  display: flex;
+  flex-direction: column;
+  background-image: url(ss.webp);
+  height: 180vh;
+  background-position: center;
+  background-size: cover;
+}
+.how-to-buy{
+  display: flex;
+  flex-direction: column; 
+}
+.text{
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.text p{
+  font-size: 20px;
+  font-family: Google Sans;
+}
+#va{
+  color: rgba(0, 0, 0, 0.80);
+  font-size: 55px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+.dev{
+  padding-inline: 20%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  border-radius: 20px;
+  min-width: 320px;
+  height: 350px;
+  background-color: white;
+}
+#aas{
+  font-size: 55px;
+  font-family: Sour Gummy;
+  font-weight: bold;
+  color: rgb(64, 133, 156);
+}
+.box .img{
+  position: relative;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num{
+  color: lightblue;
+  position: absolute;
+  top: 10px;
+  font-family: Sour Gummy;
+  left: 25px;
+  font-weight: bold;
+  font-size: 60px;
+}
+#sa{
+  color: rgb(231, 110, 130);
+}
+.img img{
+  height: 60%;
+}
+#mee{
+  text-align: center;
+  font-size: 16px;
+  padding-top: 6px;
+  font-family: Google Sans;
+}
+#hf{
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Roboto;
+  color: rgba(0, 0, 0, 0.80);
 }
 #fl {
   top: 20%;
@@ -127,161 +298,9 @@
     top: 30%;
   }
 }
-.float {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.float img {
-  width: 52%;
-  height: 52%;
-}
-.cont {
-  color: rgba(0, 0, 0, 0.85);
-  padding-inline: 20%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-#jj {
-  gap: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-}
-#jj i {
-  color: white;
-}
-#jk {
-  font-size: 34px;
-  font-family: Sour Gummy;
-  line-height: 55px;
-}
-.mme {
-  font-family: "Cherry Bomb One";
-  height: auto;
-  background-position: center;
-  background-size: cover;
-  background-image: url(ss.webp);
-}
-.how-to-buy {
-  height: auto;
-}
-.socials {
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-}
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  font-size: 60px;
-  padding-left: 50px;
-}
-.col {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 80%;
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-  width: 420px;
-  border-radius: 25px;
-  background: white;
-}
-.img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60%;
-}
-.img img {
-  height: 90%;
-  width: 80%;
-}
-.mak {
-  gap: 20px;
-  flex-direction: column;
-  display: flex;
-  padding-inline: 30px;
-  align-items: center;
-  height: 50%;
-}
-#ka {
-  font-family: Sour Gummy;
-  font-size: 35px;
-  font-weight: bold;
-}
-#kb {
-  text-align: center;
-  line-height: 26px;
-  font-family: Sour Gummy;
-  font-size: 22px;
-}
+
 #cc {
   display: none;
-}
-.tk {
-  text-align: center;
-  background-color: white;
-  display: flex;
-  font-family: "Sour Gummy";
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  border-radius: 10px;
-  font-size: 18px;
-  padding: 10px 20px;
-}
-#one {
-  background: rgba(255, 192, 203, 0.9);
-}
-#two {
-  background-color: wheat;
-}
-#three {
-  background-color: lightblue;
-}
-#two img {
-  height: 80%;
-  width: 90%;
-}
-#three img {
-  height: 80%;
-  width: 90%;
-}
-.txt {
-  font-family: Google Sans;
-  font-weight: bold;
-  font-size: 60px;
-  color: rgba(0, 0, 0, 0.795);
-}
-.ve {
-  display: flex;
-  width: 20%;
-  justify-content: space-around;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  color: white;
-  width: 90px;
-  transition: 0.2s;
-  height: 90px;
-  border-radius: 50%;
 }
 .container a {
   color: white;
@@ -296,7 +315,7 @@
 #tb {
   background-color: rgb(255, 134, 154);
 }
-.overlay{
+.overlay {
   position: relative;
   z-index: 11;
   position: fixed;
@@ -314,17 +333,17 @@
   justify-content: center;
   flex-direction: column;
 }
-.overlay a{
+.overlay a {
   width: 50%;
 }
-#kk{
+#kk {
   position: absolute;
   right: 10px;
   top: 20px;
   color: white;
   font-size: 30px;
 }
-#kk:hover{
+#kk:hover {
   color: pink;
 }
 @media (max-width: 800px) {
@@ -383,52 +402,7 @@
     width: 40px;
     height: 40px;
   }
-  .about {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-  .cont {
-    padding-inline: 40px;
-    height: 45%;
-    gap: 14px;
-    width: 100%;
-  }
-  .float img {
-    height: 100%;
-    width: 60%;
-  }
-  #jj {
-    font-size: 40px;
-  }
-  #jk {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .col {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .text {
-    
-    font-size: 50px;
-  }
-  .box {
-    height: 700px;
-    width: 90%;
-  }
-  .ve {
-    width: 70%;
-  }
-  .container {
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-  }
-  .txt {
-    font-size: 32px;
-  }
+  
 }
 @media (min-width: 801px) and (max-width: 1024px) {
   .nav {
@@ -445,35 +419,15 @@
     font-size: 28px;
     line-height: 30px;
   }
-  #fl{
+  #fl {
     display: none;
   }
-  #flx{
+  #flx {
     width: 200px;
     height: 200px;
   }
-  .box {
-    height: 700px;
-    width: 60%;
-  }
-  .ve {
-    width: 50%;
-  }
-  .container {
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-  }
-  .txt {
-    font-size: 40px;
-  }
-  .col {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .text {
-    font-size: 50px;
-  }
+  
+  
   @keyframes ff {
     0% {
       top: 80%;
