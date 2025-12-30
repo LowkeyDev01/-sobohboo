@@ -157,10 +157,21 @@
                 </div>
             </div>
         </div>
-        <div class="socials">
+        <div class="socials" id="socials">
             <div class="text">
                 <p id="aas">Join Our Cozy Corner!</p>
                 <p>Connect with the $Sobohboo family</p>
+            </div>
+            <div class="make">
+                <div class="ms">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="ms" id="ma">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div class="ms" id="me">
+                    <i class="fa-brands fa-discord"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -176,7 +187,10 @@
             overlay.style.top = '0'
         })
         closeBtn.addEventListener('click', () => {
-            overlay.style.top = '-2200px'
+            overlay.style.top = '-2000px'
+        })
+        overlay.addEventListener('click', () => {
+            overlay.style.top = '-2000px'
         })
         AOS.init();
     </script>
