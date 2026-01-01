@@ -426,6 +426,9 @@
   .btn {
     font-size: 25px;
   }
+  #mes{
+    text-align: center;
+  }
   #fl {
     display: none;
   }
