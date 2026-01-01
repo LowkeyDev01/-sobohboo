@@ -224,12 +224,14 @@
   height: 50vh;
 }
 .box {
+  padding-inline: 4px;
   display: flex;
   flex-direction: column;
   flex: 1 1;
+  gap: 4px;
   border-radius: 20px;
   min-width: 320px;
-  height: 350px;
+  height: 400px;
   background-color: white;
 }
 #aas {
@@ -267,7 +269,7 @@
   font-family: Google Sans;
 }
 #hf {
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
   font-family: Roboto;
@@ -332,6 +334,17 @@
 }
 .overlay a {
   width: 50%;
+}
+.copy{
+  font-family: Google Sans;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 15px;
+  width: 90%;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.374);
 }
 #kk {
   position: absolute;
@@ -426,8 +439,9 @@
     padding-inline: 20px;
   }
   .box {
+    padding-bottom: 30px;
     height: 300px;
-    min-width: 300px;
+    min-width: 280px;
   }
   #aas {
     font-size: 30px;
@@ -437,6 +451,10 @@
   }
   #aa {
     font-size: 14px;
+  }
+  .copy{
+    padding: 7px;
+    font-size: 13px;
   }
   #flx {
     right: 0%;
@@ -473,6 +491,12 @@
   #hb {
     font-size: 14px;
     line-height: 20px;
+  }
+  #hf{
+    font-size: 24px;
+  }
+  #mee{
+    font-size: 13px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1440px) {
@@ -516,7 +540,7 @@
     height: 200px;
   }
   .box {
-    height: 300px;
+    height: 350px;
     min-width: 300px;
   }
   .home {

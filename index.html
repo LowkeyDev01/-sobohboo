@@ -62,9 +62,9 @@
         <div class="dd">
             <img src="float-removebg-preview.webp" height="280px" width="280px">
             <p id="ha">MEET $SOBOHBOO!</p>
-            <p id="hb">$Sobohboo is a fun, community-driven crypto token built for vibes, memes, and connection.
+            <p id="hb">$SOBOHBOO is a fun, community-driven crypto token built for vibes, memes, and connection.
                 Designed to be simple and welcoming, it’s perfect for beginners and crypto enthusiasts alike.
-                Transparent, playful, and friendly, $Sobohboo isn’t just a token—it’s a space where everyone can
+                Transparent, playful, and friendly, $SOBOHBOO isn’t just a token—it’s a space where everyone can
                 join,
                 share, and enjoy the journey together.</p>
         </div>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="right">
                     <p class="top">Fun & Friendly</p>
-                    <p>It's all about enjoying memes and connecting with others</p>
+                    <p>Everything revolves around meme enjoyment and meaningful interactions with the community.</p>
                 </div>
             </div>
             <div class="col" id="one">
@@ -84,7 +84,8 @@
                 </div>
                 <div class="right">
                     <p class="top">Community First</p>
-                    <p>Powered by amazing people who love to share memes, create together, and build a welcoming Space
+                    <p>Powered by passionate people who enjoy sharing memes, collaborating creatively, and fostering a
+                        friendly community.
                     </p>
                 </div>
             </div>
@@ -94,10 +95,10 @@
                 </div>
                 <div class="right">
                     <p class="top">Transparency & Trust</p>
-                    <p>We believe in open fair. Our Project is built for everyone, with clear and simple steps</p>
+                    <p>We are committed to transparency and fairness. Our project is designed for everyone, featuring
+                        simple and easy-to-follow steps</p>
                 </div>
             </div>
-            <p id="aa">$SOBOHBOO: Simple, fun and Built for Everyone!</p>
         </div>
     </div>
     <div class="mix">
@@ -112,44 +113,43 @@
                         <p class="num">1</p>
                         <img src="wallet.png">
                     </div>
-                    <p id="hf">Get a Wallet</p>
-                    <p id="mee">Download Phantom or any Wallet to<br> hold your crypto.</p>
+                    <p id="hf">First steps in Web3? Exciting!🦄</p>
+                    <p id="mee">Use beginner-friendly Phantom or Backpack<br> wallets—like cozy pockets for your
+                        treasures.<br> Download in seconds and start the magic! 🤗</p>
                 </div>
                 <div class="box">
                     <div class="img">
                         <p class="num" id="sa">2</p>
                         <img src="card.png">
                     </div>
-                    <p id="hf">Add Funds</p>
-                    <p id="mee">Buy crypto with card or<br> bank transfer.</p>
+                    <p id="hf">Add Funds ✨</p>
+                    <p id="mee">Bring in some magic with your debit card or bank transfer. Just a few taps and you're
+                        ready! 💕</p>
                 </div>
                 <div class="box">
                     <div class="img">
                         <p class="num">3</p>
                         <img src="chain.png">
                     </div>
-                    <p id="hf">Connect to Dex</p>
-                    <p id="mee">Securely link your wallet to<br> its exchange</p>
+                    <p id="hf">🌞 Grab Some SOL! 🌞</p>
+                    <p id="mee">You’ll need a bit of SOL in your wallet<br> (Phantom or Backpack 🐾).
+                        Buy it in-app<br>Just top up and you’re ready to swap for $soBOHBOO cuddles~ 💖'
+                    </p>
                 </div>
                 <div class="box">
                     <div class="img">
                         <p class="num" id="sa">4</p>
-                        <img src="scope.png">
-                    </div>
-                    <p id="hf">Find $Sobohboo</p>
-                    <p id="mee">Search for $Sobohboo or<br> paste its address</p>
-                </div>
-                <div class="box">
-                    <div class="img">
-                        <p class="num">5</p>
                         <img src="swap.png">
                     </div>
-                    <p id="hf">Swap Tokens</p>
-                    <p id="mee">Exchange your crypto<br> for $Sobohboo</p>
+                    <p id="hf">✨ Swap Time! ✨</p>
+                    <p id="mee">Got SOL? 💜 Swap it for cozy $soBOHBOO in Phantom or Backpack.</p>
+                    <div class="copy"><p>4vhHQP2h8NiYVnLoxLXJ...</p>
+                    <i class="fa-regular fa-copy"></i>
+                    </div>
                 </div>
                 <div class="box">
                     <div class="img">
-                        <p class="num" id="sa">6</p>
+                        <p class="num" id="sa">5</p>
                         <img src="hearts.png">
                     </div>
                     <p id="hf">You're in!</p>
@@ -177,7 +177,7 @@
     </div>
     <script>
         const CA = '4vhHQP2h8NiYVnLoxLXJYKBtYuLuAH1H6sy6SoVuTPqT'
-        const copyBtn = document.getElementById('copy')
+        const copyBtn = document.querySelector('.fa-copy')
         const btn = document.getElementById('cc')
         const overlay = document.querySelector('.overlay')
         const closeBtn = document.getElementById('kk')
@@ -191,6 +191,13 @@
         })
         overlay.addEventListener('click', () => {
             overlay.style.top = '-2000px'
+        })
+        copyBtn.addEventListener('click', ()=>{
+            copyBtn.className = 'fa-solid fa-check'
+            navigator.clipboard.writeText(CA)
+            setTimeout(()=>{
+                copyBtn.className = 'fa-regular fa-copy'
+            }, 1500)
         })
         AOS.init();
     </script>
