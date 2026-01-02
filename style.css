@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
 }
 .pumpfun{
+  gap: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,6 +410,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#ba{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Londrina Shadow;
+}
+#bb{
+  font-family: Roboto;
 }
 .make {
   gap: 20px;
