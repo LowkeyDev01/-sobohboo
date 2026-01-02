@@ -7,7 +7,26 @@
   font-optical-sizing: auto;
   scroll-behavior: smooth;
 }
+.pumpfun{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  width: 100%;
+  background-image: url(background.webp);
+  background-size: cover;
+}
+.tex{
+  height: 15vh;
+}
 
+.pumpfun iframe{
+  width: 80%;
+  height: 90vh;
+  border-radius: 14px;
+  border: none;
+}
 .nav {
   position: fixed;
   top: 0;
@@ -114,8 +133,13 @@
   justify-content: center;
   align-items: center;
 }
+#sl {
+  height: 340px;
+  width: 300px;
+}
 #ha {
-  font-size: 70px;
+  text-align: center;
+  font-size: 90px;
   font-family: Cherry Bomb One;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -133,10 +157,17 @@
   flex-direction: column;
   gap: 20px;
 }
+#sx {
+  text-decoration: none;
+  transition: 0.3s;
+}
+#sx:hover {
+  transform: scale(1.04);
+}
 .col {
   font-family: Google Sans;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 110px;
   width: 100%;
   border-radius: 20px;
@@ -155,7 +186,6 @@
 }
 .lef {
   height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +225,7 @@
   flex-direction: column;
 }
 .text {
+  text-align: center;
   display: flex;
   height: 24vh;
   justify-content: center;
@@ -208,7 +239,7 @@
 }
 #va {
   color: rgba(0, 0, 0, 0.8);
-  font-size: 55px;
+  font-size: 70px;
   font-family: Roboto;
   font-weight: bold;
 }
@@ -335,7 +366,7 @@
 .overlay a {
   width: 50%;
 }
-.copy{
+.copy {
   font-family: Google Sans;
   display: flex;
   align-self: center;
@@ -391,7 +422,7 @@
     justify-content: center;
     align-items: center;
   }
-  .ms{
+  .ms {
     width: 70px;
     height: 70px;
   }
@@ -426,14 +457,18 @@
   .btn {
     font-size: 25px;
   }
-  #mes{
+  #mes {
     text-align: center;
+  }
+  #sl{
+    width: 220px;
+    height: 260px;
   }
   #fl {
     display: none;
   }
   #va {
-    font-size: 32px;
+    font-size: 40px;
   }
   .text p {
     font-size: 16px;
@@ -455,7 +490,7 @@
   #aa {
     font-size: 14px;
   }
-  .copy{
+  .copy {
     padding: 7px;
     font-size: 13px;
   }
@@ -489,16 +524,16 @@
     font-size: 12px;
   }
   #ha {
-    font-size: 35px;
+    font-size: 40px;
   }
   #hb {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
   }
-  #hf{
+  #hf {
     font-size: 24px;
   }
-  #mee{
+  #mee {
     font-size: 13px;
   }
 }
