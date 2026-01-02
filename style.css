@@ -23,6 +23,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  gap: 20px;
   height: 20vh;
 }
 
@@ -412,12 +413,14 @@
   align-items: center;
 }
 #ba{
-  font-size: 30px;
+  font-size: 50px;
+  color: black;
   font-weight: bold;
-  font-family: Londrina Shadow;
+  font-family: Roboto;
 }
 #bb{
   font-family: Roboto;
+  font-size: 24px;
 }
 .make {
   gap: 20px;
@@ -489,6 +492,14 @@
   }
   .text p {
     font-size: 16px;
+  }
+  #ba{
+    font-size: 35px;
+    text-align: center;
+  }
+  #bb{
+    text-align: center;
+    font-size: 15px;
   }
   .dev {
     padding-inline: 20px;
