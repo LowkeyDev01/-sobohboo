@@ -176,7 +176,7 @@
 .col {
   font-family: Google Sans;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 110px;
   width: 100%;
   border-radius: 20px;
@@ -195,6 +195,7 @@
 }
 .lef {
   height: 100%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,7 +503,8 @@
     font-size: 15px;
   }
   .dev {
-    padding-inline: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .box {
     padding-bottom: 30px;
@@ -521,6 +523,9 @@
   .copy {
     padding: 7px;
     font-size: 13px;
+  }
+  .lef{
+    width: 25%;
   }
   #flx {
     right: 0%;
@@ -546,6 +551,8 @@
   }
   .about {
     padding-inline: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .right p {
     padding-inline-end: 5px;
